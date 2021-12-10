@@ -1,10 +1,11 @@
 #include "lib.h"
-float Max(const float array[],int d1,float max){
-    max=array[0];
-    for (int i = 0; i < d1; i++) {
-        if(array[i]>max){
-            max=array[i];
+float numeroMassimo(const float numeri[],int dim){
+    numeri [dim];
+    float massimo=numeri[0];
+    for (int i = 0; i < dim; i++) {
+        if(massimo < numeri[i]){
+            massimo = numeri[i];
         }
     }
-    return max;
+    return massimo;
 }

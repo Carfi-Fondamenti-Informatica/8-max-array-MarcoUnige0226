@@ -3,14 +3,13 @@
 using namespace std;
 
 int main() {
-    int d1=0;
-    float array[d1];
-    float max=0;
-    cin>>d1;
-    for (int i = 0; i<d1 ; i++) {
-        cin>>array[i];
+    int dim;
+    cin>>dim;
+    float numeri[dim];
+    for (int i = 0; i < dim; i++) {
+        cin>>numeri[i];
     }
-cout<<Max(array,d1,max);
-
+    numeroMassimo(numeri, dim);
+        cout<<numeroMassimo(numeri, dim)<<endl;
     return 0;
 }
